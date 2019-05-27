@@ -1,5 +1,7 @@
 ## Template module
 
+[![Build Status](https://travis-ci.com/pipan/js-template.svg?branch=master)](https://travis-ci.com/pipan/js-template)
+
 Replace parts of the string with dynamic values.
 
 ## Installation
