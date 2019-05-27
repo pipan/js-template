@@ -1,0 +1,48 @@
+{
+  "name": "@wildebeest/template",
+  "version": "0.1.0",
+  "description": "Template module for replacing parts of string or file.",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "test": "jest",
+    "deploy": "npm run test && npm run build && git add -A && git commit -m 'build and deploy' && git push origin master",
+    "patch": "npm run deploy && npm version patch && npm publish",
+    "minor": "npm run deploy && npm version minor && npm publish",
+    "major": "npm run deploy && npm version major && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipan/js-template.git"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.2"
+  },
+  "peerDependencies": {
+    "@wildebeest/js-modules": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/combokeys": "^2.4.6",
+    "@types/jest": "^24.0.11",
+    "@wildebeest/js-modules": "^0.1.6",
+    "inversify": "^5.0.1",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.3"
+  },
+  "keywords": [
+    "module",
+    "wildebeest",
+    "template",
+    "replace",
+    "string",
+    "file"
+  ],
+  "author": "Peter Gasparik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pipan/js-template/issues"
+  },
+  "homepage": "https://github.com/pipan/js-template#readme"
+}
